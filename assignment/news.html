@@ -36,6 +36,81 @@
         #WHAT {
             size: 15%;
         }
+        
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        
+        li a:hover,
+        .dropbtn:hover .dropbtn {
+            background-color: crimson;
+        }
+        
+        li.dropdown {
+            display: inline-block;
+            padding-top: 15px
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(228, 222, 222);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        #image {
+            margin-top: 40px;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .authlogo {
+            font-size: 18px;
+            color: chartreuse;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            color: rgb(237, 243, 238);
+            padding: 30px;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        li a:hover {
+            background-color: rgb(219, 4, 4);
+        }
+        
+        .active {
+            background-color: tomato;
+        }
     </style>
 </head>
 
@@ -45,6 +120,14 @@
         <li><a class="active" href="home.html">Home</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li class="dropdown">
+            <a href="#menu" class="dropbtn">Menu</a>
+            <div class="dropdown-content">
+                <a herf="#technology">technology</a>
+                <a herf="#education">education</a>
+                <a herf="#religious">religious</a>
+            </div>
+        </li>
         <li><a href="#about">About</a></li>
         <li><a href="#about">Log In</a></li>
         <li><a href="#about">Log Out</a></li>
