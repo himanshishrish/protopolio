@@ -1,0 +1,168 @@
+<html>
+<style>
+    input[type=text],
+    select,
+    input[type=number],
+    input[type=email] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+    
+    div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        width: 50%;
+        margin-left: 20%;
+    }
+    
+    li a,
+    .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        padding-top: 30px;
+    }
+    
+    li a:hover,
+    .dropbtn:hover .dropbtn {
+        background-color: crimson;
+    }
+    
+    li.dropdown {
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgb(228, 222, 222);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .navbar {
+        background-color: #111;
+        overflow: hidden;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li a {
+        color: rgb(237, 243, 238);
+        padding: 30px;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    li a:hover {
+        background-color: rgb(219, 4, 4);
+    }
+    
+    .active {
+        background-color: tomato;
+    }
+    
+    .FORUM {
+        display: block;
+        padding-bottom: 6px;
+    }
+</style>
+
+<body>
+    <ul class="navbar">
+        <li><a class="active" href="home.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="e.html">Contact Us</a></li>
+        <li class="dropdown">
+            <a href="#menu" class="dropbtn">Menu</a>
+            <div class="dropdown-content">
+                <a herf="#technology">technology</a>
+                <a herf="#education">education</a>
+                <a herf="#religious">religious</a>
+            </div>
+        </li>
+        <li><a href="#about">About</a></li>
+        <li><a href="LogIn.html">Log In &nbsp&nbsp&nbsp <i class="fa fa-arrow-circle-o-right authlogo"></i></a></li>
+        <li><a href="LogOut.html">Log Out &nbsp&nbsp&nbsp<i class="fa fa-arrow-circle-o-left authlogo"></i> </i></a></li>
+        </li>
+    </ul>
+    <div class="notranslate" style="/* position: absolute; */top: 0;right:0;" id="vd-root-d19608294">
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="Age">Your Age</label>
+            <input type="number" id="age" name="Age" placeholder="Your Age" min=1 max=130>
+
+
+            <label for="Gender" class="FORUM">Gender</label>
+            <input type="radio" id="male" name="Gender" placeholder="Male">Male
+            <input type="radio" id="female" name="Gender" placeholder="Female">Female
+            <input type="radio" id="others" name="Gender" placeholder="Others">Others
+
+            <label for="Email" class="FORUM" style="padding-top: 6px;"> Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>

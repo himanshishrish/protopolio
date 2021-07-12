@@ -1,0 +1,252 @@
+<html>
+
+<head>
+    <title>
+        news page
+    </title>
+    <style>
+        .navbar {
+            background-color: #111;
+            overflow: hidden;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            color: rgb(237, 243, 238);
+            padding: 30px;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        li a:hover {
+            background-color: rgb(219, 4, 4);
+        }
+        
+        .active {
+            background-color: tomato;
+        }
+        
+        #WHAT {
+            size: 15%;
+        }
+        
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        
+        li a:hover,
+        .dropbtn:hover .dropbtn {
+            background-color: crimson;
+        }
+        
+        li.dropdown {
+            display: inline-block;
+            padding-top: 15px
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(228, 222, 222);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        #image {
+            margin-top: 40px;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .authlogo {
+            font-size: 18px;
+            color: chartreuse;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            color: rgb(237, 243, 238);
+            padding: 30px;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        li a:hover {
+            background-color: rgb(219, 4, 4);
+        }
+        
+        .active {
+            background-color: tomato;
+        }
+        
+        label:hover {
+            cursor: grabbing;
+        }
+        /*body {
+            background-image: url("aes.jpg");
+            width: 100%;
+        }*/
+        
+        body {
+            background-color: black;
+        }
+        
+        label {
+            font-size: 137%;
+            font-family: Ink Free;
+            color: white
+        }
+        /*.box {
+            width: 50%;
+            display: inline-block;
+            float: right;
+        }*/
+        
+        body:hover {
+            cursor: grab;
+        }
+        
+        input {
+            border: none;
+            border-bottom: 2px solid red;
+        }
+        
+        input:hover {
+            background-color: #3CBC8D;
+            color: white;
+        }
+        
+        .formdiv {
+            display: inline-block;
+        }
+        
+        .forminput {
+            width: 68%;
+            float: right;
+            margin-top: 5px;
+        }
+        
+        .formlabel {
+            /* display: inline-block;*/
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="navbar">
+        <li><a class="active" href="home.html">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li class="dropdown">
+            <a href="#menu" class="dropbtn">Menu</a>
+            <div class="dropdown-content">
+                <a herf="#technology">technology</a>
+                <a herf="#education">education</a>
+                <a herf="#religious">religious</a>
+            </div>
+        </li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#about">Log In</a></li>
+        <li><a href="#about">Log Out</a></li>
+    </ul>
+
+    </head>
+
+    <center>
+        <div>
+            <pre><font face="Ink Free" size=6% color="white">Registration 
+Form</font></pre> <br>
+
+
+            <form action="#" method="get">
+                <center>
+                    <div class="formdiv"> <label class="formlabel">Name  :</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" placeholder="Your name" class="box forminput" id="name" maxlength=20 minlength=7 style=" font-size: 15px; background-color:rgb(221, 168, 200);"> <br><br></center>
+                </div>
+                <center>
+                    <div class="formdiv"><label class="formlabel">Address:</label> &nbsp;&nbsp;
+                        <input type="text" placeholder="Enter your address" class="box forminput" style=" font-size: 15px; background-color:rgba(199, 149, 246, 0.616); "><br><br></center>
+                </div>
+
+                <center><label>Age     :</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" placeholder="Your Age" min=1 max=100 style=" font-size: 15px; background-color:#b19cd9; "><br><br></center>
+
+                <center>
+                    <label for="dob">Email :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="email" class="box" id="email" placeholder="Enter ur email" style=" font-size: 15px; background-color:rgb(221, 168, 200); "><br><br></center>
+
+
+                <center><label>Gender :</label>
+                    <input type="radio" name="gender" value="male">
+                    <font color="white"> Male</font>
+                    <input type="radio" name="gender" value="female">
+                    <font color="white"> Female</font>
+                    <input type="radio" name="gender" id="" value="others">
+                    <font color="white">Others</font> <br><br></center>
+
+
+                <center><label>Hobbies :</label>
+                    <input type="checkbox" name="singing" id="" style="color: white; font-size: 15px; background-color:rgba(199, 149, 246, 0.616);">
+                    <font color="white">Art</font>
+                    <input type="checkbox" class="singing" id="">
+                    <font color="white"> Music</font>
+                    <input type="checkbox" class="dancing" id="">
+                    <font color="white">Games</font>
+                    <input type="checkbox" class="Listening Music" id="">
+                    <font color="white">Others</font>
+                    <br><br></center>
+
+
+                <center><label>Comment :</label>
+                    <BR>
+                    <abbr title="Let us know about your views"> <textarea name="comment" id="comment" style="color: BLUE; font-size: 15px; background-color:(rgba(248, 148, 223, 0.767);"cols="30" rows="5" placeholder="Enter your comment" ></textarea></abbr>
+
+                    <br><br></center>
+
+
+                <center><input type="submit" value="Submit"></center>
+            </form>
+        </div>
+
+    </center>
+    </div>
+</body>
+<img src=bow.gif style="position:fixed; top:400px;">
+<img src=bow.gif style="position:fixed; top:400px; left:1100px;">
+
+</html>
