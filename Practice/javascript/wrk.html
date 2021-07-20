@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <script>
+        function showmessage() {
+            console.log('show button clicked')
+            let element = document.getElementById('message')
+            console.log(element)
+            element.style.display = "block";
+        }
+
+        function hidemessage() {
+            console.log('hide button clicked')
+            let element = document.getElementById('message')
+            console.log(element)
+            element.style.display = 'none'
+        }
+    </script>
+</head>
+
+<body>
+    <div id='message'>
+        <p>
+            Hello
+        </p>
+    </div>
+    <div>
+        <button onclick="showmessage()">Show Message</button>
+        <button onclick="hidemessage()">Hide Message</button>
+    </div>
+
+</body>
+
+</html>

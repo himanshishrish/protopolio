@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <style>
+        input,
+        button {
+            border: 3px solid red;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    Name<input type="text" id='name'></input>
+    <br> Address
+    <input type="text" id='address'> </input>
+    <br> Age
+    <input type="number" id='age'>
+    <button onclick="message()">submit</button>
+    <script>
+        function message() {
+            let element = document.getElementById('name')
+            console.log(element)
+            element.style.borderradius = '8px'
+            let ement = document.getElementById('address')
+            console.log(ement)
+            ement.style.border = '3px solid green'
+            let cement = document.getElementById('age')
+            console.log(cement)
+            cement.style.border = '3px solid orange'
+
+        }
+    </script>
+
+</body>
+
+</html>
