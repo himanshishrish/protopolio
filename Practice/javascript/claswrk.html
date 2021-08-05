@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>WORK</title>
+</head>
+
+<body>
+    <script>
+        let mypercent = prompt("enter your percentage.we will calculate your result")
+        if (mypercent === null) {
+            alert("Please enter your percent......");
+        } else {
+            percent = mypercent;
+            console.log("Your percent is" + mypercent)
+            console.log("See your result")
+            if (percent >= 80) {
+                console.log("distinction")
+                alert("distinction")
+            } else if (percent >= 60) {
+                alert("first division")
+            } else if (percent >= 50) {
+                alert("second division")
+            } else if (percent >= 32) {
+                alert("third division")
+            } else {
+                alert("sorry you are fail.....")
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <title></title>
+    <style>
+        label:hover {
+            color: blue;
+        }
+        
+        div:hover {
+            cursor: pointer
+        }
+        
+        label {
+            font-size: 137%;
+            font-family: Ink Free;
+            color: white
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-image: linear-gradient(rgba(230, 161, 212, 0.65),rgb(93, 41, 190));border: 1px solid grey; width: 25%;text-align: center;margin: auto auto;padding: 5px;">
+        <form>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" onkeyup="handleInput()" placeholder="Email Address or phone number"><br>
+            <span id="usernameError" style="color: red;"></span>
+            <label for="password">Password:</label><br>
+            <input type="text" id="password" onkeyup="handleInput()" placeholder="Password">
+            <span id="passwordError" style="color: red;"></span>
+            <br><br>
+            <label for="password">Confirm Password:</label><br>
+            <input type="password" placeholder="Confirm Password" id="confirmpassword">
+            <span id="confirmError" style="color: red;"></span>
+            <br><br>
+            <button onclick="handleLogin(event)" id="button">Login</button>
+        </form>
+    </div>
+    <script>
+        function handleLogin(e) {
+            e.preventDefault()
+            let usernameElement = document.getElementById("username");
+            let username = usernameElement.value;
+            let passwordElement = document.getElementById("password");
+            let password = passwordElement.value;
+            let confirmElement = document.getElementById('confirmpassword')
+            let confirm = confirmElement.value;
+            console.log('the length of username is' + username.length)
+            if (username === '') {
+                usernameElement.style.border = "1px solid red";
+                document.getElementById('usernameError').innerHTML = ' Username is required... <br>'
+                document.getElementById('button').disabled = true
+            } else {
+                if (username.length < 5) {
+                    document.getElementById('usernameError').innerHTML = 'Its too short <br>'
+                } else {
+                    usernameElement.style.border = '2px solid green';
+                    document.getElementById('usernameError').innerHTML = ' '
+
+                }
+            }
+            if (password === '') {
+                passwordElement.style.border = "1px solid red";
+                document.getElementById('passwordError').innerHTML = '<br> password is required '
+                document.getElementById('button').disabled = true
+            } else {
+
+                passwordElement.style.border = '2px solid green';
+                document.getElementById('passwordError').innerHTML = ''
+                document.getElementById('button').disabled = false
+            }
+
+            if (confirm === "") {
+                confirmElement.style.border = '1px solid red';
+                document.getElementById('confirmError').innerHTML = '<br> confirm password is required'
+                document.getElementById('button').disabled = true
+            } else {
+                if (confirm === password) {
+                    confirmElement.style.border = '2px solid blue';
+                    document.getElementById('confirmError').innerHTML = ''
+                    document.getElementById('button').disabled = false
+                    location.href = "welcome.html"
+                } else {
+                    confirmElement.style.border = "1px solid red";
+                    document.getElementById('confirmError').innerHTML = '<br> confirm password is wrong '
+                    document.getElementById('button').disabled = true
+                }
+
+            }
+
+        }
+
+        function handleInput() {
+            document.getElementById('button').disabled = false
+        }
+    </script>
+</body>
+
+</html>
