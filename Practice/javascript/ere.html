@@ -1,0 +1,35 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div style="margin: auto auto;">
+        <h3>Program to generate odd/even numbers</h3>
+    </div>
+    <form action="">
+        <input type="number" name="target_number" id="target_number" max=100 min=1>
+        <button id="generate_odd_even_btn" onclick="generateNumber(event)">Generate</button>
+        <span id="answer"></span>
+    </form>
+
+    <script>
+        function generateNumber(e) {
+            e.preventDefault()
+            let targetNumber = parseInt(document.getElementById('target_number').value)
+
+            const remainder = targetNumber % 2
+            let result = ""
+            if (remainder === 0) {
+                result += targetNumber + " is Even "
+            } else {
+                result += targetNumber + " is Odd "
+            }
+
+            document.getElementById('answer').innerHTML = "<br>" + result
+        }
+    </script>
+</body>
+
+</html>

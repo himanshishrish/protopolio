@@ -28,11 +28,25 @@
             <label>Nepali Marks: </label>
             <input type="number" id="Nepali" min=0 max=100><br><br>
             <label>Science Marks: </label>
-            <input type="number" id="Science" min=0 max=100><br><br><button>Push</button>
-            <div class="total"></div>
+            <input type="number" id="Science" min=0 max=100><br><br>
+            <button id="button" onclick="calculateResult(event)">Push</button>
+            <div id="total"></div>
         </form>
     </div>
     <script>
+        function calculateResult(event) {
+            event.preventDefault()
+            let Math = document.getElementById("Math").value
+            let Computer = document.getElementById("Computer").value
+            let Science = document.getElementById("Science").value
+            let Social = document.getElementById("Social").value
+            let English = document.getElementById("English").value
+            let Nepali = document.getElementById("Nepali").value
+            let total = parseFloat(Math) + parseFloat(Computer) + parseFloat(Science) + parseFloat(Social) + parseFloat(English) + parseFloat(Nepali)
+            let percent = parseFloat((total) / 600) * 100
+            document.getElementById("total").innerHTML = percent
+
+        }
     </script>
 </body>
 

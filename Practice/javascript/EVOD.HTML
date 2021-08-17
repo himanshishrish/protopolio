@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <style>
+        h3,
+        h4,
+        #even_numbers,
+        #odd_numbers {
+            font-family: Pecita;
+            font-size: 29px;
+            padding-right: 286px;
+        }
+        
+        button {
+            font-family: Bad Script;
+            font-size: 25px;
+            border-radius: 35px;
+            box-shadow: 5px 2px 4px 3px rgba(0, 0, 0, 0.2);
+            padding-right: 206px;
+            margin-right: 50px;
+        }
+        
+        input {
+            padding-right: 286px;
+            border: 3px solid rgba(234, 0, 255, 0.897);
+            font-family: Bad Script;
+            font-size: 25px;
+            border-radius: 15px;
+            box-shadow: 3px 1px 2px 1px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div style="margin: auto auto;">
+        <h3>Program to generate odd/even numbers</h3>
+    </div>
+    <form action="">
+        <input type="number" name="target_number" id="target_number" max=100 min=1><br>
+        <button id="generate_odd_even_btn" onclick="generateNumber(event)">Generate</button>
+
+    </form>
+    <h4>Odd Numbers:<span id="odd_numbers"></span></h4>
+    <h4>Even Numbers:<span id="even_numbers"></span></h4>
+    <script>
+        function generateNumber(e) {
+            e.preventDefault()
+            let targetNumber = parseInt(document.getElementById('target_number').value)
+            let oddNumbers = "";
+            let evenNumbers = "";
+            for (let index = 0; index <= targetNumber; index++) {
+                const remainder = index % 2
+                if (remainder === 0) {
+                    evenNumbers += index + " , "
+                } else {
+                    oddNumbers += index + " , "
+                }
+            }
+            document.getElementById('odd_numbers').innerHTML = oddNumbers
+            document.getElementById('even_numbers').innerHTML = evenNumbers
+        }
+    </script>
+</body>
+
+</html>

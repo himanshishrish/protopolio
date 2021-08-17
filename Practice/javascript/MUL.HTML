@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <style>
+        b {
+            font-family: Pecita;
+            font-size: 29px;
+        }
+        
+        button {
+            font-family: Bad Script;
+            font-size: 25px;
+            border-radius: 35px;
+            box-shadow: 5px 2px 4px 3px rgba(0, 0, 0, 0.2);
+        }
+        
+        input {
+            padding-right: 286px;
+            border: 3px solid rgba(234, 0, 255, 0.897);
+            font-family: Bad Script;
+            font-size: 25px;
+            border-radius: 15px;
+            box-shadow: 3px 1px 2px 1px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width:50%;margin-left: 35%;">
+        <b style="font-family:Ink Free;font-size: 29px">
+        Enter a number to generate Multiplication Table
+</b><br>
+        <input type="number" id="number" max=100 min=1 style="margin-left: 11%;"><br>
+        <button onclick="calculateResult(event)" style="margin-left: 24%;">Generate</button><br><br>
+        <b>MUlTIPLICATION OF THE NUMBER</b>
+        <b id="h"></b>
+        <br>
+        <span id="multiplication_result" style="font-family: Pecita;
+            font-size: 29px;">
+
+    </span>
+    </div>
+
+    <script>
+        function calculateResult(event) {
+            event.preventDefault()
+            let multiplication_result = ""
+            let number = document.getElementById("number").value
+            for (let index = 0; index <= 10; index++) {
+                const result = parseFloat(number) * index
+                const formated_result = number + " *  " + index + " = " + result + "<br>"
+                console.log(formated_result)
+                multiplication_result += formated_result
+                document.getElementById("multiplication_result").innerHTML = multiplication_result
+                document.getElementById("h").innerHTML = ' “' + number + '” '
+            }
+        }
+    </script>
+</body>
+
+</html>

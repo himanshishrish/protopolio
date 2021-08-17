@@ -1,0 +1,23 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <span id="even"></span>
+    <script>
+        for (let index = 1; index <= 100; index++) {
+            let number = index % 2
+            if (number === 0) {
+                console.log(index + " is even")
+                document.getElementById("even").innerHTML = index
+            } else {
+                console.log(index + " is odd")
+            }
+
+        }
+    </script>
+</body>
+
+</html>
