@@ -5,16 +5,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
+        table {
+            width: 780px;
+            background-color: white;
+            font-family: Comic Sans MS;
+        }
+        
+        form {
+            width: 880px;
+            background-color: rgb(241, 237, 237);
+            box-shadow: 10px 10px 10px 5px grey;
+            margin-left: 175px;
+        }
+        
         hr {
             width: 8%;
         }
         
-        table {
-            width: 240px;
-        }
-        
         .img {
-            width: 370px;
+            width: 218px;
         }
         
         .icon:hover {
@@ -22,126 +31,161 @@
             background-color: rgb(38, 125, 238);
         }
         
-        pre button {
+        button {
             border-radius: 45px;
+            font-family: Comic Sans MS;
         }
         
-        pre button:hover {
-            color: white;
+        .button {
+            padding: 13px 23px 13px 23px;
+            color: rgb(38, 125, 238);
+            border-color: rgb(38, 125, 238);
+        }
+        
+        .none {
+            border: none;
+            padding: 10px 13px 11px 13px;
+            color: rgb(197, 190, 190);
+            background-color: rgba(233, 227, 227, 0.835);
+            font-size: x-large;
+        }
+        
+        button:hover {
             border-radius: 45px;
             background-color: rgb(46, 125, 216);
+            color: white;
+            font-color: white
         }
         
         b {
             font-size: 19px;
         }
         
-        #hire {
-            border-radius: 13px;
-            padding: 9px;
-            border-color: blue;
-            color: blue;
-            background-color: white;
-        }
-        
-        #hire:hover {
-            border-radius: 13px;
-            padding: 9px;
-            color: white;
-            background-color: rgb(46, 125, 216);
+        .icon {
+            padding: 48px 19px 48px 19px;
+            font-size: small;
         }
     </style>
 </head>
 
 <body>
-    <table>
-        <tr>
-            <td>
-                <h1>pORtfOlIo</h1>
-            </td>
-            <td colspan="2"><pre><b>Home                Work                Blog                </b><button>Hire Me!</button></pre></td>
-        </tr>
-        <tr>
-            <td><img src="but.gif"></td>
-            <td colspan="2">
-                <pre style="padding-left: 15px;"> <font size=6%>Hello,I'm Deeje </font>
-<b> Expert in Graphic 
-Design & Development</b>
-available for select projects,collaborations and conculting.Currer
-available for select projects,collaborations and consulting.
-<br>
-<br>
-        <button>SEE MY WORK</button> </pre>
-            </td>
-        </tr>
-        <tr>
-            <td class="icon">
-                <center><i class="fa fa-diamond"></i>
-                    <br><b>Mobile App</b>
-                    <hr>
-                    <pre>Tracking immunizations has never 
-been easier or more secure</pre></center>
-            </td>
-            <td class="icon">
-                <center><i class="fa fa-paint-brush"></i><br>
-                    <b>Web Design</b>
-                    <hr>
-                    <pre>well we are movin' on up to the east 
-side.To a deluxe apartment in the</pre></center>
-            </td>
-            <td class="icon">
-                <center><i class="fa fa-magic "></i>
-                    <br><b>Barnding</b>
-                    <hr>
-                    <pre>well we are movin' on up to the east 
-side.To a deluxe apartment in the</pre></center>
-            </td>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img src="photo1.jpg " class="img " style="size: 15%; ">
-            </td>
+    <form>
+        <table style="background-color: rgb(241, 237, 237) 
+        ;width: 100%;">
+            <tr>
+                <td>
+                    <p align="center" style="font-size: 255%;padding-top: 25px;">&nbsp;&nbsp;&nbsp;&nbsp;pORtfOlIo</p>
+                </td>
+                <td colspan="2" align="center"><b>Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Work&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Blog&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><button class="button"><b>Hire Me!</b></button></pre>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="but1.jpg" width="120%" style="padding-bottom: 40px;padding-top: 30px;"></td>
+                <td colspan="2" style="padding-left:102px;padding-right: 129px;">
+                    <font size=5%>Hello,I'm Deeje </font><br>
+                    <b style="font-size:x-large"> Expert in Graphic <br>
+Design & Development</b><br>
+                    <p style="font-size: small;" available for select projects,collaborations and conculting.Currently<br> available for select projects,collaborations and consulting.
+                        <br>
+                        <br>
+                        <button class="button">SEE MY WORK</button> </pre>
+                </td>
+            </tr>
+        </table>
+        <div style="border-style: solid;
+            border-width: px 31px;
+            border-color: white;background-color:white;">
+            <table style=" background-color: white;margin-left: 45px;">
+                <tr>
+                    <td colspan="3" align="center">SERVICES</td>
+                </tr>
+                <tr style="padding-bottom: 99px;">
+                    <td class="icon" id="icon_d">
+                        <center><i class="fa fa-diamond" style="font-size: x-large;"></i>
+                            <br><b>Mobile App</b>
+                            <hr> Tracking immunizations has never <br> been easier or more secure</center>
+                    </td>
+                    <td class="icon">
+                        <center><i class="fa fa-paint-brush" style="font-size: x-large;"></i><br>
+                            <b style="font-size: medium;">Web Design</b>
+                            <hr> well we are movin' on up to the east <br> side.To a deluxe apartment in the</center>
+                    </td>
+                    <td class="icon">
+                        <center><i class="fa fa-magic " style="font-size: x-large;"></i>
+                            <br><b>Barnding</b>
+                            <hr> well we are movin' on up to the east <br> side.To a deluxe apartment in the</center>
+                    </td>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="border-style: solid;
+            border-width:77px 89px 89px 89px;
+            border-color: rgb(241, 237, 237);">
+            <table style="width: 100px;background-color: rgb(241, 237, 237);border-color: rgb(241, 237, 237);">
+                <p style="font-color=yellow" align="center">PORTFOLIO</p>
+                <tr>
+                    <td>
+                        <img src="photo1.jpg " class="img " align="left " style="size: 5%; ">
+                    </td>
 
-            <td>
-                <img src="photo2.jpg " class="img ">
-            </td>
+                    <td>
+                        <center> <img src="photo2.jpg " class="img "></center>
+                    </td>
 
-            <td>
-                <img src="photo3.jpg " class="img ">
-            </td>
+                    <td>
+                        <img src="photo3.jpg " class="img " align="right ">
+                    </td>
 
-        </tr>
+                </tr>
 
-        <tr>
-            <td>
-                <img src="photo4.jpg " class="img ">
-            </td>
+                <tr>
+                    <td>
+                        <img src="photo4.jpg " class="img " align="left " style="margin-right: 11px; ">
+                    </td>
 
-            <td>
-                <img src="photo5.jpg " class="img ">
-            </td>
+                    <td>
+                        <center><img src="photo5.jpg " class="img "></center>
+                    </td>
 
-            <td>
-                <img src="photo6.jpg " class="img ">
-            </td>
+                    <td>
+                        <img src="photo6.jpg " class="img " align="right ">
+                    </td>
 
-        </tr>
-        <tr>
-            <td colspan="3">
-                <center>Make it Awesome!<br>
-                    <pre>There's nothing we wont try.Never heard the word impossible.This time there's no stopping us.                              <button id="hire">Hire Me Now!</button>
-The year is 1987 and NASA launches the last of Americas deep space probes.
-                </pre></center>
-            </td>
-        </tr>
-        <tr>
-            <td colspan=3>
-                <pre>Home                              About Me                              Work                                Blog                               <button>Search<i class="	fa fa-search"></i></button></pre>
-            </td>
-        </tr>
-    </table>
-    <pre><button><i class="	fa fa-facebook"></i></button>                                           <button><i class="fa fa-twitter"></i></button>                                              <button><i class="fa fa-instagram"></i> </button>                                                     <button><i class="	fa fa-youtube-play"></i></button></pre>
+                </tr>
+            </table>
+        </div>
+        <table style="width: 100%;">
+            <tr>
+                <td colspan="3 " style="font-size: small;padding:48px 69px 45px 67px;">
+                    <center>Make it Awesome!<br> There's nothing we wont try.Never heard the word impossible.This time there's no stopping us.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="button">Hire Me Now!</button><br> The year is 1987 and NASA launches
+                        the last of Americas deep space probes.
+                    </center>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3 ">
+                    <img src="photo7.jpg " width=100%>
+                </td>
+            </tr>
+            <tr>
+                <td colspan=3 align="center " style="padding-top: 30px; ">
+                    Home &nbsp;&nbsp;&nbsp; About Me &nbsp;&nbsp;&nbsp; Work &nbsp;&nbsp;&nbsp; Blog &nbsp;&nbsp;&nbsp; <button style="padding:6px 15px 5px 14px;;background-color: white;color: gray;border-color: rgb(233, 229, 229);">&nbsp;Search...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class=" fa fa-search "></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan=3 align="center " style="padding-top: 22px; ">
+                    &nbsp;&nbsp;&nbsp; <button class="none"><i class=" fa fa-facebook " ></i></button> &nbsp;&nbsp;&nbsp; <button class="none"><i class="fa fa-twitter "></i></button> &nbsp;&nbsp;&nbsp; <button class="none"><i class="fa fa-instagram
+            "></i> </button> &nbsp;&nbsp;&nbsp; <button class="none"><i class=" fa fa-youtube-play "></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan=3 align="center " style="padding-top: 22px;padding-bottom: 22px;color: rgb(199, 195, 195); ">
+                    Copyright <i class="fa fa-copyright"></i> 2017. Portfolio By VictorThemes
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 
 </html>
