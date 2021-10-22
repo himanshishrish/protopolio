@@ -43,7 +43,6 @@
         }
         
         .button {
-            padding: 1px 21px 3px 17px;
             color: rgb(38, 125, 238);
             border-color: rgb(38, 125, 238);
             margin-top: 8px;
@@ -72,13 +71,22 @@
             padding: 48px 19px 48px 19px;
             font-size: small;
         }
+        
+        .img:hover {
+            transform: scale(1.2);
+        }
+        
+        .photo2 {
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Bootstrap </h1>
+
 
     <div id="form">
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <h3 style=" font-family: Comic Sans MS">PORTFOLIO</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -110,7 +118,7 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
-                        <form><button class="button"><b style="font-size: 15px;">Hire Me!</b></button></form>
+                        <form><button class="button" style="padding: 1px 21px 3px 17px;"><b style="font-size: 15px;">Hire Me!</b></button></form>
                     </ul>
 
                 </div>
@@ -118,17 +126,7 @@
         </nav>
         <table style="background-color: rgb(241, 237, 237) 
         ;width: 100%;">
-            <tr>
-                <td>
-                    <p align="center" style="font-size: 255%;padding-top: 25px;">&nbsp;&nbsp;&nbsp;&nbsp;pORtfOlIo</p>
-                </td>
-                <td colspan="2" align="center">
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    </form>
-                </td>
-            </tr>
+
             <tr>
                 <td><img src="but1.jpg" width="120%" style="padding-bottom: 40px;padding-top: 30px;"></td>
                 <td colspan="2" style="padding-left:102px;padding-right: 129px;">
@@ -138,7 +136,7 @@ Design & Development</b><br>
                     <p style="font-size: small;" available for select projects,collaborations and conculting.Currently<br> available for select projects,collaborations and consulting.
                         <br>
                         <br>
-                        <button class="button">SEE MY WORK</button> </pre>
+                        <button class="button" style="padding: 13px 23px 13px 23px;">SEE MY WORK</button> </pre>
                 </td>
             </tr>
         </table>
@@ -150,20 +148,20 @@ Design & Development</b><br>
                     <td colspan="3" align="center">SERVICES</td>
                 </tr>
                 <tr style="padding-bottom: 99px;">
-                    <td class="icon" id="icon_d">
-                        <center><i class="fa fa-diamond" style="font-size: x-large;"></i>
-                            <br><b>Mobile App</b>
-                            <hr> Tracking immunizations has never <br> been easier or more secure</center>
+                    <td class="icon" id="icon_d" style="text-align: center;">
+                        <i class="fa fa-diamond" style="font-size: x-large;"></i>
+                        <br><b>Mobile App</b>
+                        <br>____<br> Tracking immunizations has never <br> been easier or more secure
                     </td>
-                    <td class="icon">
-                        <center><i class="fa fa-paint-brush" style="font-size: x-large;"></i><br>
-                            <b style="font-size: medium;">Web Design</b>
-                            <hr> well we are movin' on up to the east <br> side.To a deluxe apartment in the</center>
+                    <td class="icon" style="text-align: center;">
+                        <i class="fa fa-paint-brush" style="font-size: x-large;"></i><br>
+                        <b style="font-size: medium;">Web Design</b>
+                        <br>____<br> well we are movin' on up to the east <br> side.To a deluxe apartment in the
                     </td>
-                    <td class="icon">
-                        <center><i class="fa fa-magic " style="font-size: x-large;"></i>
-                            <br><b>Barnding</b>
-                            <hr> well we are movin' on up to the east <br> side.To a deluxe apartment in the</center>
+                    <td class="icon" style="text-align: center;">
+                        <i class="fa fa-magic " style="font-size: x-large;"></i>
+                        <br><b>Barnding</b>
+                        <br>____<br> well we are movin' on up to the east <br> side.To a deluxe apartment in the
                     </td>
                     </td>
                 </tr>
@@ -173,42 +171,43 @@ Design & Development</b><br>
             border-width:77px 89px 89px 89px;
             border-color: rgb(241, 237, 237);">
             <table style="width: 100px;background-color: rgb(241, 237, 237);border-color: rgb(241, 237, 237);">
-                <p style="font-color=yellow" align="center">PORTFOLIO</p>
+                <p style=" text-align:center">PORTFOLIO</p>
                 <tr>
                     <td>
-                        <img src="photo1.jpg " class="img " align="left " style="size: 5%; ">
+                        <img src="photo1.jpg " class="img " style="size: 5%;text-align: left ">
                     </td>
 
                     <td>
-                        <center> <img src="photo2.jpg " class="img "></center>
+                        <img src="photo2.jpg " class="img photo2 ">
                     </td>
 
                     <td>
-                        <img src="photo3.jpg " class="img " align="right ">
+                        <img src="photo3.jpg " class="img " style="text-align: right">
                     </td>
 
                 </tr>
 
                 <tr>
                     <td>
-                        <img src="photo4.jpg " class="img " align="left " style="margin-right: 11px; ">
+                        <img src="photo4.jpg " class="img " style="margin-right: 11px; text-align: left">
                     </td>
 
                     <td>
-                        <center><img src="photo5.jpg " class="img "></center>
+
+                        <img src="photo5.jpg " class="img " style="text-align: center;">
                     </td>
 
                     <td>
-                        <img src="photo6.jpg " class="img " align="right ">
+                        <img src="photo6.jpg " class="img " style="text-align: right;">
                     </td>
 
                 </tr>
             </table>
         </div>
-        <table style="width: 100%;">
+        <table style="width: 100%; ">
             <tr>
-                <td colspan="3 " style="font-size: small;padding:48px 69px 45px 67px;">
-                    <center>Make it Awesome!<br> There's nothing we wont try.Never heard the word impossible.This time there's no stopping us.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="button">Hire Me Now!</button><br> The year is 1987 and NASA launches
+                <td colspan="3 " style="font-size: small;padding:48px 69px 45px 67px; ">
+                    <center>Make it Awesome!<br> There's nothing we wont try.Never heard the word impossible.This time there's no stopping us.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="button ">Hire Me Now!</button><br> The year is 1987 and NASA launches
                         the last of Americas deep space probes.
                     </center>
                 </td>
@@ -220,18 +219,28 @@ Design & Development</b><br>
             </tr>
             <tr>
                 <td colspan=3 align="center " style="padding-top: 30px; ">
-                    Home &nbsp;&nbsp;&nbsp; About Me &nbsp;&nbsp;&nbsp; Work &nbsp;&nbsp;&nbsp; Blog &nbsp;&nbsp;&nbsp; <button style="padding:6px 15px 5px 14px;;background-color: white;color: gray;border-color: rgb(233, 229, 229);">&nbsp;Search...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class=" fa fa-search "></i></button>
+                    Home &nbsp;&nbsp;&nbsp; About Me &nbsp;&nbsp;&nbsp; Work &nbsp;&nbsp;&nbsp; Blog &nbsp;&nbsp;&nbsp; <button style="padding:6px 15px 5px 14px;;background-color: white;color: gray;border-color: rgb(233, 229, 229);
+                            ">&nbsp;Search...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class=" fa fa-search "></i></button>
                 </td>
             </tr>
             <tr>
                 <td colspan=3 align="center " style="padding-top: 22px; ">
-                    &nbsp;&nbsp;&nbsp; <button class="none"><i class=" fa fa-facebook " ></i></button> &nbsp;&nbsp;&nbsp; <button class="none"><i class="fa fa-twitter "></i></button> &nbsp;&nbsp;&nbsp; <button class="none"><i class="fa fa-instagram
-            "></i> </button> &nbsp;&nbsp;&nbsp; <button class="none"><i class=" fa fa-youtube-play "></i></button>
+                    &nbsp;&nbsp;&nbsp; <button class="none "><i class=" fa fa-facebook " ></i></button> &nbsp;&nbsp;&nbsp; <button class="none "><i class="fa fa-twitter "></i></button> &nbsp;&nbsp;&nbsp; <button class="none "><i class="fa fa-instagram
+                            "></i> </button> &nbsp;&nbsp;&nbsp; <button class="none "><i class=" fa fa-youtube-play "></i></button>
                 </td>
             </tr>
             <tr>
                 <td colspan=3 align="center " style="padding-top: 22px;padding-bottom: 22px;color: rgb(199, 195, 195); ">
-                    Copyright <i class="fa fa-copyright"></i> 2017. Portfolio By VictorThemes
+                    Copyright <i class="fa fa-copyright "></i> 2017. Portfolio By VictorThemes
+                </td>
+            </tr>
+            <tr>
+
+                <td colspan="2" align="center">
+                    <form class="d-flex">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </form>
                 </td>
             </tr>
         </table>
@@ -240,7 +249,7 @@ Design & Development</b><br>
 </body>
 
 <!-- for bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous ">
 </script>
 
 </html>
